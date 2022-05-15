@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --size: 100;
+  --unit: calc((var(--size) / 300) * 1vmin);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c1f2ee;
+}
+
+.container {
+  height: calc(250 * var(--unit));
+  width: calc(250 * var(--unit));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container svg {
+  height: 100%;
+}
+
+.burst1,
+.burst2,
+.burst3,
+.burst4 {
+  opacity: 0;
+}
+
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubbles,
+.headBubbles {
+  fill: white;
+  opacity: 0.8;
+}
